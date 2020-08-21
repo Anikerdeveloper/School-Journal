@@ -1,5 +1,5 @@
-#include "authtorizationui.h"
-#include "ui_authtorizationui.h"
+#include "authorizationui.h"
+#include "ui_authorizationui.h"
 #include "mainw.h"
 #include "dataofstudent.h"
 
@@ -9,19 +9,19 @@ QString LoginP = "Admin";
 QString PassP = "AdminPassword";
 bool EchoIsNormal = false;
 
-AuthtorizationUI::AuthtorizationUI(QWidget *parent) :
+AuthorizationUI::AuthorizationUI(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::AuthtorizationUI)
+    ui(new Ui::AuthorizationUI)
 {
     ui->setupUi(this);
 }
 
-AuthtorizationUI::~AuthtorizationUI()
+AuthorizationUI::~AuthorizationUI()
 {
     delete ui;
 }
 
-void AuthtorizationUI::on_Auth_Button_clicked()
+void AuthorizationUI::on_Auth_Button_clicked()
 {
     DataOfStudent dof;
     qDebug() << "Логин - " << ui->Login->text() << "\n" << "Пароль - " << ui->Password->text();
@@ -33,7 +33,7 @@ void AuthtorizationUI::on_Auth_Button_clicked()
     }
 }
 
-void AuthtorizationUI::on_pushButton_clicked()
+void AuthorizationUI::on_pushButton_clicked()
 {
     switch (EchoIsNormal) {
     case 0:

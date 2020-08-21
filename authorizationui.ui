@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AuthtorizationUI</class>
- <widget class="QDialog" name="AuthtorizationUI">
+ <class>AuthorizationUI</class>
+ <widget class="QDialog" name="AuthorizationUI">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Authtorization</string>
+   <string>Authorization</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">

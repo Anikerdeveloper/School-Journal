@@ -1,3 +1,9 @@
+<Name ID=0>АДМИНИСТРАТОР
+<LastName ID=0>АДМИН
+<MiddleName ID=0>АДМИНИСТРАТОР
+<Name ID=1>Чварков
+<LastName ID=1>Чварка
+<MiddleName ID=1>Чваркович
 <Name ID=2>Ташев
 <LastName ID=2>Ильхан
-<MiddleName ID=2>Сдали в дет.дом
+<MiddleName ID=2>НЕИЗВЕСТНО

@@ -1,9 +1,9 @@
-<Login ID=0>Vlad
-<Password ID=0>Zhuko
-<ClassFile ID=0>2B.txt
+<Login ID=0>Admin
+<Password ID=0>ADMIN
+<ClassFile ID=0>11A.txt
 <Login ID=1>Shoshi
-<Password ID=1>Zhuk
-<ClassFile ID=1>9A.txt
+<Password ID=1>Lobachev
+<ClassFile ID=1>11A.txt
 <Login ID=2>Tashev
-<Password ID=2>DETDOM
+<Password ID=2>Tashevich
 <ClassFile ID=2>11A.txt

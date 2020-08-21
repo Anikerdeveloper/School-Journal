@@ -17,19 +17,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     TFR.cpp \
-    authtorizationui.cpp \
+    authorizationui.cpp \
     dataofstudent.cpp \
     main.cpp \
     mainw.cpp
 
 HEADERS += \
     TFR.h \
-    authtorizationui.h \
+    authorizationui.h \
     dataofstudent.h \
     mainw.h
 
 FORMS += \
-    authtorizationui.ui \
+    authorizationui.ui \
     mainw.ui
 
 TRANSLATIONS += \

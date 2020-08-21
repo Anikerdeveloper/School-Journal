@@ -4,16 +4,16 @@
 #include <QDialog>
 
 namespace Ui {
-class AuthtorizationUI;
+class AuthorizationUI;
 }
 
-class AuthtorizationUI : public QDialog
+class AuthorizationUI : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit AuthtorizationUI(QWidget *parent = nullptr);
-    ~AuthtorizationUI();
+    explicit AuthorizationUI(QWidget *parent = nullptr);
+    ~AuthorizationUI();
 
 private slots:
     void on_Auth_Button_clicked();
@@ -21,7 +21,7 @@ private slots:
     void on_pushButton_clicked();
 
 private:
-    Ui::AuthtorizationUI *ui;
+    Ui::AuthorizationUI *ui;
 };
 
 #endif // AUTHTORIZATIONUI_H

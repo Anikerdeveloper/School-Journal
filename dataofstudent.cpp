@@ -18,17 +18,18 @@ bool DataOfStudent::AuthtorizationStudent(QString LoginS, QString PassS) {
 
     int CountAccounts = fr.TagCount("Login");
     for (int i = 0; i < CountAccounts; i++) {
-        if (QString::fromStdString(fr.ReadFromTag("Login")) == LoginS){
+        qDebug() << i;
+
+        if (QString::fromStdString(fr.GetLineOfAttribute("Login","ID", to_string(i))) == LoginS){
             if (QString::fromStdString(fr.GetLineOfAttribute("Password","ID", to_string(i))) == PassS) {
                 StudentID = i;
                 ClassFile = fr.GetLineOfAttribute("ClassFile","ID", to_string(i));
                 fr.TFRFile("C:/Git-Projects/School-Journal/" + ClassFile);
                 return true;
-            }
-        } else {
-           //return false;
+            } else {
+                return false;
+             }
         }
-
     }
 }
 

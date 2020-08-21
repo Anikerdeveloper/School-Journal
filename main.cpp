@@ -1,11 +1,11 @@
-#include "authtorizationui.h"
+#include "authorizationui.h"
 
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    AuthtorizationUI aui;
+    AuthorizationUI aui;
     aui.show();
     return a.exec();
 }
