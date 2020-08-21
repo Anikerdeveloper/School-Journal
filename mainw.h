@@ -15,9 +15,10 @@ public:
     explicit MainW(QWidget *parent = nullptr);
     ~MainW();
 
+    void SetData();
+
 private slots:
     void on_pushButton_clicked();
-
     void on_pushButton_2_clicked();
 
 private:

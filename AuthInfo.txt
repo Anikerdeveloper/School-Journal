@@ -1,0 +1,6 @@
+<Login ID=0>Vlad
+<Password ID=0>Zhuko
+<ClassFile ID=0>2B.txt
+<Login ID=1>Shoshi
+<Password ID=1>Zhuk
+<ClassFile ID=0>9A.txt

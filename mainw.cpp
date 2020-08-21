@@ -1,5 +1,7 @@
 #include "mainw.h"
 #include "ui_mainw.h"
+#include "dataofstudent.h"
+#include <QDebug>
 
 MainW::MainW(QWidget *parent) :
     QDialog(parent),
@@ -21,4 +23,9 @@ void MainW::on_pushButton_clicked()
 void MainW::on_pushButton_2_clicked()
 {
     ui->MainWidget->setCurrentIndex(1);
+}
+
+void MainW::SetData() {
+    DataOfStudent dof;
+    ui->StudentName->setText(dof.FullName() + "ya tuta");
 }
