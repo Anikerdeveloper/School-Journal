@@ -3,4 +3,7 @@
 <ClassFile ID=0>2B.txt
 <Login ID=1>Shoshi
 <Password ID=1>Zhuk
-<ClassFile ID=0>9A.txt
+<ClassFile ID=1>9A.txt
+<Login ID=2>Tashev
+<Password ID=2>DETDOM
+<ClassFile ID=2>11A.txt

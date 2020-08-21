@@ -38,7 +38,6 @@ string TFR::GetAttributeValue(string AttributeName) { //Значение атрибута
         if (Buff[i] != ' ' && Buff[i] != '>' && Buff[i] != '=')
         {
             Attribute += Buff[i];
-            cout << Attribute << endl;
         }
         else if (Buff[i] == '=' && Attribute == AttributeName)
         {
@@ -120,7 +119,6 @@ string TFR::ReadFromTag(string Tag) { //Получение одиночной строки по тэгу
             {
                 if (Buff[0] != '<') {
                     TextInLine += '\n' + Buff;
-                    //cout << "Внимание! Нарушена структура файла! Обнаружена строка не соответствующая требованиям!" << endl;
                     break;
                 }
                 else if (Buff[i] == '>' && Tag == GetTagFromLine()) {

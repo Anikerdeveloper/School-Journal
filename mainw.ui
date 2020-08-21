@@ -152,13 +152,13 @@ border: 2px solid gray;</string>
          <x>5</x>
          <y>5</y>
          <width>228</width>
-         <height>20</height>
+         <height>45</height>
         </rect>
        </property>
        <property name="maximumSize">
         <size>
          <width>228</width>
-         <height>20</height>
+         <height>45</height>
         </size>
        </property>
        <property name="font">
@@ -172,7 +172,11 @@ border: 0px ;
 </string>
        </property>
        <property name="text">
-        <string>Иванов Иван Иванович</string>
+        <string>Владиславов Владислав
+Владислалович</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
        </property>
       </widget>
      </widget>

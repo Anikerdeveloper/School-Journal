@@ -3,35 +3,30 @@
 #include <QDebug>
 #include <QMessageBox>
 
-TFR fr;
-
 string ClassFile;
 int StudentID;
-
 Student studentdata;
+
+TFR fr;
 
 DataOfStudent::DataOfStudent()
 {
-    fr.TFRFile("C:/Git-Projects/School-Journal/AuthInfo.txt");
 }
 
 bool DataOfStudent::AuthtorizationStudent(QString LoginS, QString PassS) {
+    fr.TFRFile("C:/Git-Projects/School-Journal/AuthInfo.txt");
+
     int CountAccounts = fr.TagCount("Login");
     for (int i = 0; i < CountAccounts; i++) {
-
         if (QString::fromStdString(fr.ReadFromTag("Login")) == LoginS){
-            qDebug() << "Логин существует" << "\n";
             if (QString::fromStdString(fr.GetLineOfAttribute("Password","ID", to_string(i))) == PassS) {
-                qDebug() << "Пароль верный";
                 StudentID = i;
-                ClassFile = fr.GetLineOfAttribute("ClassFile","ID",to_string(i));
+                ClassFile = fr.GetLineOfAttribute("ClassFile","ID", to_string(i));
                 fr.TFRFile("C:/Git-Projects/School-Journal/" + ClassFile);
-                qDebug() << "C:/Git-Projects/School-Journal/" + QString::fromStdString(ClassFile);
                 return true;
             }
         } else {
-           qDebug() << "логина нет";
-           return false;
+           //return false;
         }
 
     }
@@ -41,5 +36,10 @@ QString DataOfStudent::FullName() {
    studentdata.Name = QString::fromStdString(fr.GetLineOfAttribute("Name","ID", to_string(StudentID)));
    studentdata.LastName = QString::fromStdString(fr.GetLineOfAttribute("LastName","ID", to_string(StudentID)));
    studentdata.MiddleName = QString::fromStdString(fr.GetLineOfAttribute("MiddleName","ID", to_string(StudentID)));
-   return studentdata.Name;
+
+   if (studentdata.Name.length() + studentdata.LastName.length() <= 13) {
+       return studentdata.Name + " " + studentdata.LastName + "\n" + studentdata.MiddleName;
+   } else {
+       return studentdata.Name + " " + studentdata.LastName + " " + studentdata.MiddleName;
+   }
 }

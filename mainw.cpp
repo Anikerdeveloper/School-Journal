@@ -27,5 +27,5 @@ void MainW::on_pushButton_2_clicked()
 
 void MainW::SetData() {
     DataOfStudent dof;
-    ui->StudentName->setText(dof.FullName() + "ya tuta");
+    ui->StudentName->setText(dof.FullName());
 }
