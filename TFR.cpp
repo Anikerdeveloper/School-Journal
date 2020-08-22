@@ -84,8 +84,43 @@ string TFR::GetTagFromLine() { //Получение тэга строки (больше для работы систем
     }
     return TagInLine;
 }
+string TFR::GetFromMultipleTags(int SIZE,string Tag,string AttributeName[],string AttributeValue[]) {
+    bool Has = false;
+    string TextInLine = "";
+    ifstream ofile(FileLink);
+    if (ofile.is_open()) {
+        while (!ofile.eof())
+        {
+            getline(ofile, Buff, '\n');
+            if (Tag == GetTagFromLine())
+            {
+                for (int i = 0; i < SIZE; i++)
+                {
+                    if (GetAttributeValue(AttributeName[i]) == AttributeValue[i]) {
+                        Has = true;
+                    }
+                    else if (i == 0 || Has) {
+                        Has = false;
+                        break;
+                    }
+                }
 
-
+                for (int i = 0; i < Buff.length(); i++)
+                {
+                    if (Buff[i] == '>' && Has) {
+                        for (int j = i + 1; j < Buff.length(); j++)
+                        {
+                            TextInLine += Buff[j];
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+        ofile.close();
+        return TextInLine;
+    }
+}
 
 int TFR::TagCount(string Tag) { //Количество тэгов в файле
     string LBuff;
@@ -101,9 +136,12 @@ int TFR::TagCount(string Tag) { //Количество тэгов в файле
                 Count++;
             }
         }
+        ofile.close();
         return Count;
     }
 }
+
+
 
 
 string TFR::ReadFromTag(string Tag) { //Получение одиночной строки по тэгу
@@ -117,11 +155,7 @@ string TFR::ReadFromTag(string Tag) { //Получение одиночной строки по тэгу
             BuffL = Buff.length();
             for (int i = 0; i < BuffL; i++)
             {
-                if (Buff[0] != '<') {
-                    TextInLine += '\n' + Buff;
-                    break;
-                }
-                else if (Buff[i] == '>' && Tag == GetTagFromLine()) {
+                if (Buff[i] == '>' && Tag == GetTagFromLine()) {
                     for (int j = i + 1; j < BuffL; j++)
                     {
                         TextInLine += Buff[j];
@@ -134,8 +168,7 @@ string TFR::ReadFromTag(string Tag) { //Получение одиночной строки по тэгу
     }
 }
 
-
-string TFR::GetMultiLine(string TagName) { //Получение многострочного текста по тэгу
+string TFR::GetMultiLine(string Tag) { //Получение многострочного текста по тэгу
     string TextInLine;
     int BuffL = 0;
     ifstream ofile(FileLink);
@@ -150,7 +183,7 @@ string TFR::GetMultiLine(string TagName) { //Получение многострочного текста по 
             {
                 for (int i = 1; i < BuffL; i++)
                 {
-                    if (Buff[i] == '>' && TagName == GetTagFromLine()) {
+                    if (Buff[i] == '>' && Tag == GetTagFromLine()) {
                         for (int j = i + 1; j < BuffL; j++)
                         {
                             TextInLine += Buff[j];
@@ -163,11 +196,12 @@ string TFR::GetMultiLine(string TagName) { //Получение многострочного текста по 
                 TextInLine += '\n' + Buff;
             }
         }
+        ofile.close();
         return TextInLine;
     }
 }
 
-string TFR::GetMultiLineOfAttribute(string TagName, string AttributeName, string AttributeValue) { //Получение многострочного текста по тэгу
+string TFR::GetMultiLineOfAttribute(string Tag, string AttributeName, string AttributeValue) { //Получение многострочного текста по тэгу
     string TextInLine;
     int BuffL = 0;
     ifstream ofile(FileLink);
@@ -182,7 +216,7 @@ string TFR::GetMultiLineOfAttribute(string TagName, string AttributeName, string
             {
                 for (int i = 1; i < BuffL; i++)
                 {
-                    if (Buff[i] == '>' && TagName == GetTagFromLine() && HasTheDesiredAttribute(AttributeName) && AttributeValue == GetAttributeValue(AttributeName)) {
+                    if (Buff[i] == '>' && Tag == GetTagFromLine() && HasTheDesiredAttribute(AttributeName) && AttributeValue == GetAttributeValue(AttributeName)) {
                         for (int j = i + 1; j < BuffL; j++)
                         {
                             TextInLine += Buff[j];
@@ -195,6 +229,7 @@ string TFR::GetMultiLineOfAttribute(string TagName, string AttributeName, string
                 TextInLine += '\n' + Buff;
             }
         }
+        ofile.close();
         return TextInLine;
     }
 }
@@ -226,5 +261,6 @@ string TFR::GetLineOfAttribute(string Tag, string AttributeName, string Attribut
             }
         }
     }
+    ofile.close();
     return TextInLine;
 }

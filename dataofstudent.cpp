@@ -44,3 +44,25 @@ QString DataOfStudent::FullName() {
        return studentdata.Name + " " + studentdata.LastName + " " + studentdata.MiddleName;
    }
 }
+
+void GetSTB(){
+    string *Buff = new string[7];
+
+}
+
+void DataOfStudent::SetTimeTable(QTableWidget &qtw) {
+    GetSTB();
+    string AttributeN[2] = {"DayNumber","LessonNumber"};
+    string AttributeV[2];
+    for(int i = 0; i < 7; i++)
+    {
+        for(int y = 0; y < 6; y++)
+        {
+            AttributeV[0] = y;
+            AttributeV[1] = i;
+            qtw.setItem(i, y, new QTableWidgetItem(QString::fromStdString(/*fr.GetLineOfAttribute("TimetableC","DayNumber",to_string(y))*/fr.GetFromMultipleTags(2,"TimetableC",AttributeN,AttributeV))));
+
+        }
+    }
+    //qtw.setItem(0, 0, new QTableWidgetItem("q"/*studentdata.stb.STB[0][0]*/));
+}

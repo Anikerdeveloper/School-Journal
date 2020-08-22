@@ -7,3 +7,6 @@
 <Login ID=2>Tashev
 <Password ID=2>Tashevich
 <ClassFile ID=2>11A.txt
+<Login ID=3>Topol
+<Password ID=3>232323
+<ClassFile ID=3>11A.txt

@@ -14,11 +14,11 @@ private:
 public:
 	void TFRFile(string File);//Получение ссылки на файл
 	string GetTagFromLine();//Получение тэга строки (больше для работы системы)
+	string GetFromMultipleTags(int SIZE, string Tag, string AttributeName[], string AttributeValue[]);
 	int TagCount(string Tag);//Количество тэгов в файле
 	string ReadFromTag(string Tag); //Получение одиночной строки по тэгу
-	string GetMultiLine(string TagName); //Получение многострочного текста по тэгу
-	string GetMultiLineOfAttribute(string TagName, string AttributeName, string AttributeValue);
+	string GetMultiLine(string Tag); //Получение многострочного текста по тэгу
+	string GetMultiLineOfAttribute(string Tag, string AttributeName, string AttributeValue);
 	string GetLineOfAttribute(string Tag, string AttributeName, string AttributeValue); //Получение строки с нужным тэгом, атрибутом, значением атрибута
-
 };
 

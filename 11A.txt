@@ -1,9 +1,59 @@
+<Class>11A
+<TimetableC DayNumber=0 LessonNumber=0>A
+<TimetableC DayNumber=0 LessonNumber=1>B
+<TimetableC DayNumber=0 LessonNumber=2>C
+<TimetableC DayNumber=0 LessonNumber=3>D
+<TimetableC DayNumber=0 LessonNumber=4>E
+<TimetableC DayNumber=0 LessonNumber=5>F
+<TimetableC DayNumber=0 LessonNumber=6>G
+
+<TimetableC DayNumber=1 LessonNumber=0>A
+<TimetableC DayNumber=1 LessonNumber=1>B
+<TimetableC DayNumber=1 LessonNumber=2>C
+<TimetableC DayNumber=1 LessonNumber=3>D
+<TimetableC DayNumber=1 LessonNumber=4>E
+<TimetableC DayNumber=1 LessonNumber=5>F
+<TimetableC DayNumber=1 LessonNumber=6>G
+
+<TimetableC DayNumber=2 LessonNumber=0>A
+<TimetableC DayNumber=2 LessonNumber=1>B
+<TimetableC DayNumber=2 LessonNumber=2>C
+<TimetableC DayNumber=2 LessonNumber=3>D
+<TimetableC DayNumber=2 LessonNumber=4>E
+<TimetableC DayNumber=2 LessonNumber=5>F
+<TimetableC DayNumber=2 LessonNumber=6>G
+
+<TimetableC DayNumber=3 LessonNumber=0>A
+<TimetableC DayNumber=3 LessonNumber=1>B
+<TimetableC DayNumber=3 LessonNumber=2>C
+<TimetableC DayNumber=3 LessonNumber=3>D
+<TimetableC DayNumber=3 LessonNumber=4>E
+<TimetableC DayNumber=3 LessonNumber=5>F
+<TimetableC DayNumber=3 LessonNumber=6>G
+
+<TimetableC DayNumber=4 LessonNumber=0>A
+<TimetableC DayNumber=4 LessonNumber=1>B
+<TimetableC DayNumber=4 LessonNumber=2>C
+<TimetableC DayNumber=4 LessonNumber=3>D
+<TimetableC DayNumber=4 LessonNumber=4>E
+<TimetableC DayNumber=4 LessonNumber=5>F
+<TimetableC DayNumber=4 LessonNumber=6>G
+
+<TimetableC DayNumber=5 LessonNumber=0>A
+<TimetableC DayNumber=5 LessonNumber=1>B
+<TimetableC DayNumber=5 LessonNumber=2>C
+<TimetableC DayNumber=5 LessonNumber=3>D
+<TimetableC DayNumber=5 LessonNumber=4>E
+<TimetableC DayNumber=5 LessonNumber=5>F
+<TimetableC DayNumber=5 LessonNumber=6>G
+
 <Name ID=0>АДМИНИСТРАТОР
 <LastName ID=0>АДМИН
 <MiddleName ID=0>АДМИНИСТРАТОР
+<Subject ID=0 SubjectName=Maths>545454555455
 <Name ID=1>Чварков
 <LastName ID=1>Чварка
 <MiddleName ID=1>Чваркович
 <Name ID=2>Ташев
 <LastName ID=2>Ильхан
-<MiddleName ID=2>НЕИЗВЕСТНО
+<MiddleName ID=2>НЕИЗТНО

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>1080</width>
     <height>435</height>
    </rect>
   </property>
@@ -14,6 +14,12 @@
    <size>
     <width>800</width>
     <height>435</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1080</width>
+    <height>16777215</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -24,7 +30,7 @@
     <rect>
      <x>249</x>
      <y>-1</y>
-     <width>551</width>
+     <width>831</width>
      <height>441</height>
     </rect>
    </property>
@@ -33,7 +39,7 @@
 border-radius: 4px 4px;</string>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QLabel" name="label">
@@ -103,6 +109,110 @@ border-radius: 4px 4px;</string>
      <property name="text">
       <string>Расписание</string>
      </property>
+    </widget>
+    <widget class="QTableWidget" name="Timetable">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>810</width>
+       <height>390</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>810</width>
+       <height>390</height>
+      </size>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::AnyKeyPressed</set>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="gridStyle">
+      <enum>Qt::DashLine</enum>
+     </property>
+     <property name="rowCount">
+      <number>7</number>
+     </property>
+     <property name="columnCount">
+      <number>6</number>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>130</number>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderMinimumSectionSize">
+      <number>35</number>
+     </attribute>
+     <attribute name="verticalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <column>
+      <property name="text">
+       <string>Понедельник</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Вторник</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Среда</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Четверг</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Пятница</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Суббота</string>
+      </property>
+     </column>
     </widget>
    </widget>
   </widget>

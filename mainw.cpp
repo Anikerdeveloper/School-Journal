@@ -2,6 +2,7 @@
 #include "ui_mainw.h"
 #include "dataofstudent.h"
 #include <QDebug>
+#include <QTableWidget>
 
 MainW::MainW(QWidget *parent) :
     QDialog(parent),
@@ -28,4 +29,7 @@ void MainW::on_pushButton_2_clicked()
 void MainW::SetData() {
     DataOfStudent dof;
     ui->StudentName->setText(dof.FullName());
+    dof.SetTimeTable(*ui->Timetable);
+
+
 }
