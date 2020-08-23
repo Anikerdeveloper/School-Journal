@@ -39,30 +39,63 @@ QString DataOfStudent::FullName() {
    studentdata.MiddleName = QString::fromStdString(fr.GetLineOfAttribute("MiddleName","ID", to_string(StudentID)));
 
    if (studentdata.Name.length() + studentdata.LastName.length() <= 13) {
-       return studentdata.Name + " " + studentdata.LastName + "\n" + studentdata.MiddleName;
+       return studentdata.LastName + " " + studentdata.Name + "\n" + studentdata.MiddleName;
    } else {
-       return studentdata.Name + " " + studentdata.LastName + " " + studentdata.MiddleName;
+       return studentdata.LastName + " " + studentdata.Name + " " + studentdata.MiddleName;
    }
 }
 
-void GetSTB(){
-    string *Buff = new string[7];
-
-}
-
 void DataOfStudent::SetTimeTable(QTableWidget &qtw) {
-    GetSTB();
     string AttributeN[2] = {"DayNumber","LessonNumber"};
-    string AttributeV[2];
-    for(int i = 0; i < 7; i++)
+    string AttributeV[2] = {"0","1"};
+    for(int i = 0; i < 6; i++)//урок
     {
-        for(int y = 0; y < 6; y++)
+        for(int y = 0; y < 7; y++)//день
         {
-            AttributeV[0] = y;
-            AttributeV[1] = i;
-            qtw.setItem(i, y, new QTableWidgetItem(QString::fromStdString(/*fr.GetLineOfAttribute("TimetableC","DayNumber",to_string(y))*/fr.GetFromMultipleTags(2,"TimetableC",AttributeN,AttributeV))));
+            AttributeV[0] = to_string(i);
+            AttributeV[1] = to_string(y);
+            qtw.setItem(y, i, new QTableWidgetItem(QString::fromStdString(fr.GetFromMultipleTags(2,"TimetableC",AttributeN,AttributeV))));
 
         }
     }
-    //qtw.setItem(0, 0, new QTableWidgetItem("q"/*studentdata.stb.STB[0][0]*/));
+}
+
+void DataOfStudent::SetEstimatesTable(QTableWidget &qtw) {
+
+    qtw.setRowCount(fr.TagCount("LessonName"));
+    for (int i = 0; i < fr.TagCount("LessonName"); i++)
+    {
+        qtw.setItem(i,0, new QTableWidgetItem(QString::fromStdString(fr.GetLineOfAttribute("LessonName","Lesson",to_string(i)))));
+    }
+
+    string NameAS[2] = {"Lesson","ID"};
+    string ValueAS[2] = {"", to_string(StudentID)};
+
+    for (int i = 0; i < fr.TagCount("LessonName"); i++)
+    {
+        ValueAS[0] = to_string(i);
+        qtw.setItem(i,1, new QTableWidgetItem(QString::fromStdString(fr.GetFromMultipleTags(2,"LessonEstimates",NameAS,ValueAS))));
+    }
+
+    string Buff;
+    string C;
+    float AverageScore = 0;
+
+    for (int i = 0; i < fr.TagCount("LessonName"); i++)
+    {
+        AverageScore = 0;
+        ValueAS[0] = to_string(i);
+        Buff = fr.GetFromMultipleTags(2,"LessonEstimates",NameAS,ValueAS);
+        for (int y = 0; y < Buff.length(); y++)
+        {
+            C = Buff[y];
+            AverageScore += stoi(C);
+            cout << AverageScore << "-";
+        }
+        cout << endl;
+        AverageScore = AverageScore / Buff.length();
+        qtw.setItem(i,2, new QTableWidgetItem(QString::number(AverageScore)));
+    }
+
+    qtw.resizeColumnsToContents();
 }

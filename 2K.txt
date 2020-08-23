@@ -1,0 +1,75 @@
+<Class>2K
+<TimetableC DayNumber=0 LessonNumber=0>
+<TimetableC DayNumber=0 LessonNumber=1>Английский язык
+<TimetableC DayNumber=0 LessonNumber=2>Эл-ты высш. мат-ки
+<TimetableC DayNumber=0 LessonNumber=3>Англ. яз.
+<TimetableC DayNumber=0 LessonNumber=4>
+<TimetableC DayNumber=0 LessonNumber=5>
+<TimetableC DayNumber=0 LessonNumber=6>
+
+<TimetableC DayNumber=1 LessonNumber=0>Опер.Системы
+<TimetableC DayNumber=1 LessonNumber=1>Опер.Системы
+<TimetableC DayNumber=1 LessonNumber=2>Опер.Системы
+<TimetableC DayNumber=1 LessonNumber=3>Русский язык и КР
+<TimetableC DayNumber=1 LessonNumber=4>ТСИ
+<TimetableC DayNumber=1 LessonNumber=5>
+<TimetableC DayNumber=1 LessonNumber=6>
+
+<TimetableC DayNumber=2 LessonNumber=0>
+<TimetableC DayNumber=2 LessonNumber=1>Основы прог-я
+<TimetableC DayNumber=2 LessonNumber=2>Численные методы
+<TimetableC DayNumber=2 LessonNumber=3>Опер.Системы/ТСИ
+<TimetableC DayNumber=2 LessonNumber=4>Архитектура КС
+<TimetableC DayNumber=2 LessonNumber=5>
+<TimetableC DayNumber=2 LessonNumber=6>
+
+<TimetableC DayNumber=3 LessonNumber=0>Основы прог-я
+<TimetableC DayNumber=3 LessonNumber=1>Архитектура КС
+<TimetableC DayNumber=3 LessonNumber=2>Эл-ты высш. мат-ки
+<TimetableC DayNumber=3 LessonNumber=3>Основы прог-я
+<TimetableC DayNumber=3 LessonNumber=4>
+<TimetableC DayNumber=3 LessonNumber=5>
+<TimetableC DayNumber=3 LessonNumber=6>
+
+<TimetableC DayNumber=4 LessonNumber=0>Учебная практика/-
+<TimetableC DayNumber=4 LessonNumber=1>Учебная практика/-
+<TimetableC DayNumber=4 LessonNumber=2>Учебная практика
+<TimetableC DayNumber=4 LessonNumber=3>-/Учебная практика
+<TimetableC DayNumber=4 LessonNumber=4>-/Учебная практика
+<TimetableC DayNumber=4 LessonNumber=5>
+<TimetableC DayNumber=4 LessonNumber=6>
+
+<TimetableC DayNumber=5 LessonNumber=0>Основы прог-я
+<TimetableC DayNumber=5 LessonNumber=1>Физ-ра
+<TimetableC DayNumber=5 LessonNumber=2>Основы фил-фии
+<TimetableC DayNumber=5 LessonNumber=3>Основы прог-я
+<TimetableC DayNumber=5 LessonNumber=4>
+<TimetableC DayNumber=5 LessonNumber=5>
+<TimetableC DayNumber=5 LessonNumber=6>
+
+<LessonName Lesson=0>Англ.Яз
+<LessonName Lesson=1>Эл-ты высш. мат-ки
+<LessonName Lesson=2>Опер.Системы
+<LessonName Lesson=3>Основы прог-я
+<LessonName Lesson=4>Русский язык и КР
+<LessonName Lesson=5>ТСИ
+<LessonName Lesson=6>Численные методы
+<LessonName Lesson=7>Архитектура КС
+<LessonName Lesson=8>Учебная практика
+<LessonName Lesson=9>Физ-ра
+<LessonName Lesson=10>Основы фил-фии
+
+<Name ID=1>しょし
+<LastName ID=1>ろばちぇふ
+<MiddleName ID=1>Nikolaevich
+<LessonEstimates Lesson=0 ID=1>454345345345
+<LessonEstimates Lesson=1 ID=1>34534554
+<LessonEstimates Lesson=2 ID=1>3454534453
+<LessonEstimates Lesson=3 ID=1>4353453453
+<LessonEstimates Lesson=4 ID=1>345
+<LessonEstimates Lesson=5 ID=1>54342
+<LessonEstimates Lesson=6 ID=1>34353253
+<LessonEstimates Lesson=7 ID=1>2352343
+<LessonEstimates Lesson=8 ID=1>35325
+<LessonEstimates Lesson=9 ID=1>235353
+<LessonEstimates Lesson=10 ID=1>3535344345

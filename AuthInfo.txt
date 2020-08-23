@@ -3,9 +3,9 @@
 <ClassFile ID=0>11A.txt
 <Login ID=1>Shoshi
 <Password ID=1>Lobachev
-<ClassFile ID=1>11A.txt
-<Login ID=2>Tashev
-<Password ID=2>Tashevich
+<ClassFile ID=1>2K.txt
+<Login ID=2>Chvarka
+<Password ID=2>Chvarkovich
 <ClassFile ID=2>11A.txt
 <Login ID=3>Topol
 <Password ID=3>232323

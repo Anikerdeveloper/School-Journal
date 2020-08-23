@@ -30,6 +30,7 @@ void MainW::SetData() {
     DataOfStudent dof;
     ui->StudentName->setText(dof.FullName());
     dof.SetTimeTable(*ui->Timetable);
+    dof.SetEstimatesTable(*ui->EstimatesTable);
 
 
 }

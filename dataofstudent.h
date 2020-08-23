@@ -9,16 +9,11 @@ struct Subject {
     QString Appraisals;
 };
 
-struct StudentTimeTable {
-    QString STB[7][6];
-};
-
 struct Student {
     QString Name;
     QString LastName;
     QString MiddleName;
     QString StudentClass;
-    StudentTimeTable stb;
     std::vector<Subject> AcademicSubjects;
 };
 
@@ -30,6 +25,7 @@ public:
     bool AuthtorizationStudent(QString LoginS, QString PassS);
     static QString FullName();
     void SetTimeTable(QTableWidget &qtw);
+    void SetEstimatesTable(QTableWidget &qtw);
 };
 
 #endif // DATAOFSTUDENT_H

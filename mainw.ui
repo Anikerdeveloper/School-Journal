@@ -39,7 +39,7 @@
 border-radius: 4px 4px;</string>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QLabel" name="label">
@@ -71,6 +71,49 @@ border-radius: 4px 4px;</string>
      <property name="text">
       <string>Электронный дневник</string>
      </property>
+    </widget>
+    <widget class="QTableWidget" name="EstimatesTable">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>810</width>
+       <height>390</height>
+      </rect>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="tabKeyNavigation">
+      <bool>false</bool>
+     </property>
+     <property name="sortingEnabled">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>220</number>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>true</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Название предмета</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Оценки</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Средний балл</string>
+      </property>
+     </column>
     </widget>
    </widget>
    <widget class="QWidget" name="page_2">
@@ -159,7 +202,7 @@ border-radius: 4px 4px;</string>
       <number>6</number>
      </property>
      <attribute name="horizontalHeaderVisible">
-      <bool>true</bool>
+      <bool>false</bool>
      </attribute>
      <attribute name="horizontalHeaderMinimumSectionSize">
       <number>130</number>
@@ -168,7 +211,7 @@ border-radius: 4px 4px;</string>
       <bool>true</bool>
      </attribute>
      <attribute name="verticalHeaderVisible">
-      <bool>true</bool>
+      <bool>false</bool>
      </attribute>
      <attribute name="verticalHeaderMinimumSectionSize">
       <number>35</number>

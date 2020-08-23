@@ -1,59 +1,112 @@
 <Class>11A
-<TimetableC DayNumber=0 LessonNumber=0>A
-<TimetableC DayNumber=0 LessonNumber=1>B
-<TimetableC DayNumber=0 LessonNumber=2>C
-<TimetableC DayNumber=0 LessonNumber=3>D
-<TimetableC DayNumber=0 LessonNumber=4>E
-<TimetableC DayNumber=0 LessonNumber=5>F
-<TimetableC DayNumber=0 LessonNumber=6>G
+<TimetableC DayNumber=0 LessonNumber=0>Алгебра
+<TimetableC DayNumber=0 LessonNumber=1>Алгебра
+<TimetableC DayNumber=0 LessonNumber=2>Русский язык
+<TimetableC DayNumber=0 LessonNumber=3>Русский язык
+<TimetableC DayNumber=0 LessonNumber=4>Физика
+<TimetableC DayNumber=0 LessonNumber=5>Физ-ра
+<TimetableC DayNumber=0 LessonNumber=6>
 
-<TimetableC DayNumber=1 LessonNumber=0>A
-<TimetableC DayNumber=1 LessonNumber=1>B
-<TimetableC DayNumber=1 LessonNumber=2>C
-<TimetableC DayNumber=1 LessonNumber=3>D
-<TimetableC DayNumber=1 LessonNumber=4>E
-<TimetableC DayNumber=1 LessonNumber=5>F
-<TimetableC DayNumber=1 LessonNumber=6>G
+<TimetableC DayNumber=1 LessonNumber=0>Технология
+<TimetableC DayNumber=1 LessonNumber=1>Технология
+<TimetableC DayNumber=1 LessonNumber=2>Геометрия
+<TimetableC DayNumber=1 LessonNumber=3>Геометрия
+<TimetableC DayNumber=1 LessonNumber=4>Русский язык
+<TimetableC DayNumber=1 LessonNumber=5>Русский язык
+<TimetableC DayNumber=1 LessonNumber=6>История России
 
-<TimetableC DayNumber=2 LessonNumber=0>A
-<TimetableC DayNumber=2 LessonNumber=1>B
-<TimetableC DayNumber=2 LessonNumber=2>C
-<TimetableC DayNumber=2 LessonNumber=3>D
-<TimetableC DayNumber=2 LessonNumber=4>E
-<TimetableC DayNumber=2 LessonNumber=5>F
-<TimetableC DayNumber=2 LessonNumber=6>G
+<TimetableC DayNumber=2 LessonNumber=0>ИЗО
+<TimetableC DayNumber=2 LessonNumber=1>Алгебра
+<TimetableC DayNumber=2 LessonNumber=2>Английский язык
+<TimetableC DayNumber=2 LessonNumber=3>Английский язык
+<TimetableC DayNumber=2 LessonNumber=4>География
+<TimetableC DayNumber=2 LessonNumber=5>Физика
+<TimetableC DayNumber=2 LessonNumber=6>
 
-<TimetableC DayNumber=3 LessonNumber=0>A
-<TimetableC DayNumber=3 LessonNumber=1>B
-<TimetableC DayNumber=3 LessonNumber=2>C
-<TimetableC DayNumber=3 LessonNumber=3>D
-<TimetableC DayNumber=3 LessonNumber=4>E
-<TimetableC DayNumber=3 LessonNumber=5>F
-<TimetableC DayNumber=3 LessonNumber=6>G
+<TimetableC DayNumber=3 LessonNumber=0>Введ-е в химию
+<TimetableC DayNumber=3 LessonNumber=1>Лит-ра
+<TimetableC DayNumber=3 LessonNumber=2>Лит-ра
+<TimetableC DayNumber=3 LessonNumber=3>Музыка
+<TimetableC DayNumber=3 LessonNumber=4>Биология
+<TimetableC DayNumber=3 LessonNumber=5>Физ-ра
+<TimetableC DayNumber=3 LessonNumber=6>Род.Русс.Яз.
 
-<TimetableC DayNumber=4 LessonNumber=0>A
-<TimetableC DayNumber=4 LessonNumber=1>B
-<TimetableC DayNumber=4 LessonNumber=2>C
-<TimetableC DayNumber=4 LessonNumber=3>D
-<TimetableC DayNumber=4 LessonNumber=4>E
-<TimetableC DayNumber=4 LessonNumber=5>F
-<TimetableC DayNumber=4 LessonNumber=6>G
+<TimetableC DayNumber=4 LessonNumber=0>География
+<TimetableC DayNumber=4 LessonNumber=1>История России
+<TimetableC DayNumber=4 LessonNumber=2>Английский язык
+<TimetableC DayNumber=4 LessonNumber=3>Информатика
+<TimetableC DayNumber=4 LessonNumber=4>Общество-е
+<TimetableC DayNumber=4 LessonNumber=5>Физ-ра
+<TimetableC DayNumber=4 LessonNumber=6>
 
-<TimetableC DayNumber=5 LessonNumber=0>A
-<TimetableC DayNumber=5 LessonNumber=1>B
-<TimetableC DayNumber=5 LessonNumber=2>C
-<TimetableC DayNumber=5 LessonNumber=3>D
-<TimetableC DayNumber=5 LessonNumber=4>E
-<TimetableC DayNumber=5 LessonNumber=5>F
-<TimetableC DayNumber=5 LessonNumber=6>G
+<TimetableC DayNumber=5 LessonNumber=0>
+<TimetableC DayNumber=5 LessonNumber=1>
+<TimetableC DayNumber=5 LessonNumber=2>
+<TimetableC DayNumber=5 LessonNumber=3>
+<TimetableC DayNumber=5 LessonNumber=4>
+<TimetableC DayNumber=5 LessonNumber=5>
+<TimetableC DayNumber=5 LessonNumber=6>
 
-<Name ID=0>АДМИНИСТРАТОР
-<LastName ID=0>АДМИН
+<LessonName Lesson=0>Алгебра
+<LessonName Lesson=1>Русский язык
+<LessonName Lesson=2>Физика
+<LessonName Lesson=3>Физ-ра
+<LessonName Lesson=4>Технология
+<LessonName Lesson=5>Геометрия
+<LessonName Lesson=6>История России
+<LessonName Lesson=7>ИЗО
+<LessonName Lesson=8>Английский язк
+<LessonName Lesson=9>Введение в химию
+<LessonName Lesson=10>География
+<LessonName Lesson=11>Биология
+<LessonName Lesson=12>Род.Русс.Яз
+<LessonName Lesson=13>Музыка
+<LessonName Lesson=14>Лит-ра
+<LessonName Lesson=15>Информатика
+<LessonName Lesson=16>Общество-е
+
+<Name ID=0>Админ
+<LastName ID=0>АДМИНИСТРАТОР
 <MiddleName ID=0>АДМИНИСТРАТОР
-<Subject ID=0 SubjectName=Maths>545454555455
-<Name ID=1>Чварков
-<LastName ID=1>Чварка
-<MiddleName ID=1>Чваркович
+<LessonEstimates Lesson=0 ID=0>5555555
+<LessonEstimates Lesson=1 ID=0>5555555
+<LessonEstimates Lesson=2 ID=0>5555555
+<LessonEstimates Lesson=3 ID=0>5555555
+<LessonEstimates Lesson=4 ID=0>5555555
+<LessonEstimates Lesson=5 ID=0>5555555
+<LessonEstimates Lesson=6 ID=0>5555555
+<LessonEstimates Lesson=7 ID=0>5555555
+<LessonEstimates Lesson=8 ID=0>5555555
+<LessonEstimates Lesson=9 ID=0>5555555
+<LessonEstimates Lesson=10 ID=0>5555555
+<LessonEstimates Lesson=11 ID=0>5555555
+<LessonEstimates Lesson=12 ID=0>5555555
+<LessonEstimates Lesson=13 ID=0>5555555
+<LessonEstimates Lesson=14 ID=0>5555555
+<LessonEstimates Lesson=15 ID=0>5555555
+<LessonEstimates Lesson=16 ID=0>5555555
+
+<Name ID=2>Чварка
+<LastName ID=2>Чварков
+<MiddleName ID=2>Чваркович
+<LessonEstimates Lesson=0 ID=2>354235
+<LessonEstimates Lesson=1 ID=2>2345432
+<LessonEstimates Lesson=2 ID=2>5352
+<LessonEstimates Lesson=3 ID=2>552343
+<LessonEstimates Lesson=4 ID=2>23543253
+<LessonEstimates Lesson=5 ID=2>55555555
+<LessonEstimates Lesson=6 ID=2>534323
+<LessonEstimates Lesson=7 ID=2>5234
+<LessonEstimates Lesson=8 ID=2>52235
+<LessonEstimates Lesson=9 ID=2>54535255
+<LessonEstimates Lesson=10 ID=2>235434
+<LessonEstimates Lesson=11 ID=2>55533244534253
+<LessonEstimates Lesson=12 ID=2>52343245
+<LessonEstimates Lesson=13 ID=2>2345432235435253
+<LessonEstimates Lesson=14 ID=2>34345455
+<LessonEstimates Lesson=15 ID=2>5323454235
+<LessonEstimates Lesson=16 ID=2>35234
+
 <Name ID=2>Ташев
 <LastName ID=2>Ильхан
 <MiddleName ID=2>НЕИЗТНО
