@@ -3,6 +3,9 @@
 #include <QString>
 #include <vector>
 #include <QTableWidget>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlTableModel>
 
 struct Subject {
     QString NameSubject;
